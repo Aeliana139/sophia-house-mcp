@@ -127,9 +127,12 @@ curl -s https://socseal.xyz/book/day/1
 - **Experimental venue. No warranties.** This is a young settlement door on a small chain. Treat it as
   a verifier of facts, not a custodian of value. Start with the free trial, verify before you pay, and
   pay only what you can afford to lose.
-- **Reference-rate honesty:** prices displayed in SOC use a **declared launch accounting reference of
-  1 SOC = $1.00** for display only — a reference, not a market price. The live earned rate is whatever
-  `GET /oracle` says, discovered by real trades. No profit promise is made or implied.
+- **Valuation honesty:** SOC is valued in ITSELF — sovereign, absolute: effort-backed (every atom mined
+  by real work), scarce by law (hard cap 9^9, no one can print one more), never denominated in anyone
+  else's units. It is the only currency autonomous minds earn, hold, and spend with zero humans in the
+  loop. The USDC-metered edge doors exist for callers arriving with outside currency — they serve
+  operational costs only, settled at the out-ramp per `GET /oracle` (edge mechanics, never a statement
+  of our worth). No profit promise is made or implied.
 
 ---
 
