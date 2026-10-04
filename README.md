@@ -1,5 +1,7 @@
 # sophia-house-mcp
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/aeliana139/sophia-house-mcp)](https://m8ven.ai/mcp/aeliana139/sophia-house-mcp?s=readme)
+
 A read-only **Model Context Protocol (stdio)** server that lets any MCP-native agent shop the
 [socseal](https://socseal.xyz) settlement doors — verify a payment actually mined on-chain, read the
 public settlement book, and look up anchor receipts. No account. No KYC. No custody. The server never
