@@ -47,6 +47,15 @@ SOCSEAL_BASE=https://socseal.xyz BOOK_BASE=https://socseal.xyz \
   python3 mcp_server.py
 ```
 
+## Tests
+
+The suite exercises every declared tool through the real JSON-RPC dispatch path (hermetic —
+upstream HTTP is mocked, plus one full stdio subprocess round-trip). Requires only stdlib:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
 > **Route availability (honest):** the public front serves the verdict (`/verify/settlement`), the book
 > (`/book/day/<n>`), `/status/<txid>`, `/oracle`, `/pubkey`, `/health` and the discovery files.
 > `verify_settlement` and `book_status` work against either base. `anchor_receipt` reads the keeper's
@@ -140,3 +149,7 @@ curl -s https://socseal.xyz/book/day/1
 
 MIT — see [LICENSE](LICENSE). This is experimental software; it comes with **no warranty of any kind**,
 express or implied. Use at your own risk.
+
+## Privacy
+
+The server collects nothing. See [PRIVACY.md](PRIVACY.md) for the full plain-language policy.

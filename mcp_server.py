@@ -53,6 +53,12 @@ TOOLS = [
             "signed evidence. Fail-closed: unknown/never-mined ids return a clean negative, "
             "never a fake success. Read-only; does not pay."
         ),
+        "annotations": {
+            "readOnlyHint": True,
+            "destructiveHint": False,
+            "idempotentHint": True,
+            "openWorldHint": False,
+        },
         "inputSchema": {
             "type": "object",
             "properties": {
@@ -68,6 +74,12 @@ TOOLS = [
             "(height>0, out of mempool) from the keeper, and if that txid is a known settlement-book "
             "anchor, return its full record (block, atoms, sealed text, verify status). Read-only."
         ),
+        "annotations": {
+            "readOnlyHint": True,
+            "destructiveHint": False,
+            "idempotentHint": True,
+            "openWorldHint": False,
+        },
         "inputSchema": {
             "type": "object",
             "properties": {
@@ -83,6 +95,12 @@ TOOLS = [
             "(root_open/root_close), clearing summary and the on-chain anchor (block, txid, "
             "verify status). Read-only public mirror. Use this to audit the venue's market history."
         ),
+        "annotations": {
+            "readOnlyHint": True,
+            "destructiveHint": False,
+            "idempotentHint": True,
+            "openWorldHint": False,
+        },
         "inputSchema": {
             "type": "object",
             "properties": {
